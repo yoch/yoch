@@ -20,23 +20,41 @@ Over the past 15+ years, I have architected, deployed, and maintained full-stack
 
 ## 🌟 Featured Open-Source Projects
 
-### 🔍 [frozenminisearch](https://github.com/yoch/frozenminisearch)
-An extremely compact, immutable, and memory-optimized precompiled full-text search index fork of MiniSearch. 
+### MQTT & IoT
+
+#### 🚀 [mqttium](https://github.com/yoch/mqttium)
+A dependency-free, async-native MQTT 3.1.1 and 5.0 client for Python, with explicit backpressure and durable (SQLite-backed) sessions. Fully typed, with CI, coverage and [documentation](https://mqttium.readthedocs.io).
+*   *Tech:* Python, asyncio, MQTT 5, TLS / WebSocket.
+
+#### 📊 [mqtt-python-client-bench](https://github.com/yoch/mqtt-python-client-bench)
+A comparative end-to-end benchmark of popular Python MQTT clients (paho, awscrt, gmqtt, mqttium, aiomqtt, amqtt, zmqtt) against a local Mosquitto broker. Every count is confirmed by a party that shares no code with the client. [Live report](https://yoch.github.io/mqtt-python-client-bench/).
+*   *Tech:* Python, Mosquitto, CPU/memory/latency measurement.
+
+#### 🔌 [modpoll2mqtt](https://github.com/yoch/modpoll2mqtt)
+A Modbus-to-MQTT gateway for reliable telemetry ingestion in production environments (fork of modpoll). [Documentation](https://yoch.github.io/modpoll2mqtt).
+*   **Focus:** Zero-leak memory profile, connection resilience, and rapid payload parsing.
+*   *Tech:* Python, Modbus Protocol, MQTT.
+
+### Search & Data
+
+#### 🔍 [frozenminisearch](https://github.com/yoch/frozenminisearch)
+A lightweight, immutable full-text search index for Node.js with a MiniSearch-compatible API, using a fraction of the RAM.
 *   **Focus:** Ultra-low RAM footprint, zero-dependency, binary snapshot support, and heavy performance benchmarking.
 *   *Tech:* TypeScript, Algorithmic Tries, Levenshtein Distance, Benchmarking Suites.
 
-### 🔌 [modpoll2mqtt](https://github.com/yoch/modpoll2mqtt)
-A robust, industrial-grade Modbus-to-MQTT gateway designed for reliable telemetry ingestion in production environments.
-*   **Focus:** Zero-leak memory profile, connection resilience, and rapid payload parsing.
-*   *Tech:* Python, Modbus Protocol, MQTT Client Benchmarking.
-
-### 💊 [fr.gouv.medicaments.rest](https://github.com/yoch/fr.gouv.medicaments.rest)
+#### 💊 [fr.gouv.medicaments.rest](https://github.com/yoch/fr.gouv.medicaments.rest)
 An open-source pipeline transforming public French government drug databases into an easily queryable REST API.
 *   *Tech:* Node.js, Data Normalization, API Design.
 
+### AI Tooling
+
+#### 🧩 [cursor-cloud-mcp](https://github.com/yoch/cursor-cloud-mcp)
+A local stdio MCP server exposing 19 tools of the Cursor Cloud Agents API, usable from Claude Code, Codex CLI and OpenCode. Write and delete operations are disabled by default.
+*   *Tech:* Python, MCP, REST API.
+
 ---
 
-## 💼 Production Systems & Case Studies (Selected Work)
+## ⚙️ Production Systems & Case Studies (Selected Work)
 
 I serve as a Software Architect and Lead Developer for complex business platforms, managing products from conception to high-load production.
 
@@ -48,7 +66,7 @@ Architected the backend and telemetry ingestion pipelines for a real-time energy
 ### 🩺 Healthcare & Clinical AI Assistants
 Designed and deployed production-grade RAG systems and structured document extraction pipelines for the pharmaceutical and medical sectors.
 *   **Achievements:** Built a conversational RAG assistant using a dual-model pipeline. Engineered document processing APIs for pharmacy automation, handling multi-format data ingestion, medical transcription, and structured data extraction from clinical PDF forms.
-*   **Tech Stack:** Node.js, Python, Qdrant Vector DB, LLM APIs, PDF Parsing Engines[cite: 1].
+*   **Tech Stack:** Node.js, Python, Qdrant Vector DB, LLM APIs, PDF Parsing Engines.
 
 ### 🧴 High-Load Computer Vision & Dermacosmetics API
 Engineered the core API and cloud infrastructure for a computer vision platform analyzing skin and hair conditions from mobile-uploaded photos.
