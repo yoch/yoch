@@ -24,7 +24,7 @@ Over the past 15+ years, I have architected, deployed, and maintained full-stack
 ### AI, LLM & Agents
 
 #### 🧠 [camembert-pharmacy-reranker-distil](https://huggingface.co/ymelka/camembert-pharmacy-reranker-distil)
-A lightweight French reranker for pharmacy search. Given a query such as *"générique de Doliprane 500 mg"*, it reorders candidate drugs from the public French drug database (BDPM) so that the right specialty comes first: right generic, dosage, form and population.
+A lightweight French reranker for pharmacy search. It reorders candidate drugs from the public French drug database (BDPM) so that the right specialty comes first: right generic, dosage, form and population.
 *   **Focus:** Domain fine-tuning evaluated on a frozen holdout, outperforming its base model while largely preserving general French reranking. Small enough (~68M parameters) to run on CPU.
 *   *Tech:* DistilCamemBERT, Cross-Encoder Fine-tuning, Hugging Face.
 
