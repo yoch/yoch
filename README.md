@@ -25,7 +25,7 @@ Over the past 15+ years, I have architected, deployed, and maintained full-stack
 
 #### 🧠 [camembert-pharmacy-reranker-distil](https://huggingface.co/ymelka/camembert-pharmacy-reranker-distil)
 A lightweight French reranker for pharmacy search. It reorders candidate drugs from the public French drug database (BDPM) so that the right specialty comes first: right generic, dosage, form and population.
-*   **Focus:** Domain fine-tuning evaluated on a frozen holdout, outperforming its base model while largely preserving general French reranking. Small enough (~68M parameters) to run on CPU.
+*   **Focus:** Domain fine-tuning that outperforms its base model while largely preserving general French reranking. Small enough (~68M parameters) to run on CPU.
 *   *Tech:* DistilCamemBERT, Cross-Encoder Fine-tuning, Hugging Face.
 
 #### 🧩 [cursor-cloud-mcp](https://github.com/yoch/cursor-cloud-mcp)
@@ -56,7 +56,7 @@ A lightweight, immutable full-text search index for Node.js with a MiniSearch-co
 
 #### 💊 [fr.gouv.medicaments.rest](https://github.com/yoch/fr.gouv.medicaments.rest)
 A REST API over the public French drug databases (human drugs from BDPM, veterinary drugs from ANMV), refreshed daily and designed to be called by LLM agents as well as by applications.
-*   **LLM-ready:** Compact Markdown / summary output that fits agent context windows, tool-ready drug shortage alerts, typo-tolerant prefix and fuzzy search.
+*   **LLM-ready:** Compact Markdown / summary output that fits agent context windows, typo-tolerant prefix and fuzzy search.
 *   *Tech:* Node.js, Data Normalization, API Design.
 
 #### 🗺️ [sparse-som](https://github.com/yoch/sparse-som)
@@ -95,7 +95,7 @@ I believe that:
 1.  **Performance is a feature:** A 10x reduction in memory or CPU usage translates directly to infrastructure savings and a better user experience.
 2.  **Telemetry is mandatory:** A system is only as reliable as its monitoring. If it is not monitored, it is broken.
 3.  **Simplicity scales:** Prefer boring, robust technologies (Postgres, Redis, clean Unix/Linux pipelines) over complex distributed state unless strictly necessary.
-4.  **Evaluate on your own data:** Generic benchmarks don't predict production behaviour. Models, retrieval and prompts are evaluated and optimized on real data from the target domain, against held-out test sets, before they ship.
+4.  **Evaluate on your own data:** Generic benchmarks don't predict production behaviour. Models, retrieval and prompts are evaluated and optimized on real data from the target domain before they ship.
 
 ---
 
