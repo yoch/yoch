@@ -28,6 +28,11 @@ A lightweight French reranker for pharmacy search. It reorders candidate drugs f
 *   **Focus:** Domain fine-tuning that outperforms its base model while largely preserving general French reranking. Small enough (~68M parameters) to run on CPU.
 *   *Tech:* DistilCamemBERT, Cross-Encoder Fine-tuning, Hugging Face.
 
+#### 🗣️ [tiny-voca-french](https://huggingface.co/ymelka/tiny-voca-french)
+A small French text-to-speech model with five voices, built on [tiny-voca](https://github.com/n4ze3m/tiny-voca) and trained from scratch on 55.6 hours of speech. The whole model, waveform generator included, has 4.5M parameters: it runs about 30x faster than real time on four CPU threads, and entirely in the browser in the [live demo](https://huggingface.co/spaces/ymelka/tiny-voca-french).
+*   **Focus:** French rules on top of eSpeak NG (liaisons, elisions, misread words) with a test suite; intelligibility measured with a protocol fixed before synthesis.
+*   *Tech:* PyTorch, eSpeak NG, ONNX Runtime Web, WebAssembly, Pyodide.
+
 #### 🧩 [cursor-cloud-mcp](https://github.com/yoch/cursor-cloud-mcp)
 A local stdio MCP server to launch, follow up, supervise and track the cost of a fleet of Cursor Cloud Agents from Claude Code, Codex CLI or OpenCode. 19 tools, published on PyPI; write and delete operations are disabled by default.
 *   *Tech:* Python, MCP, REST API.
